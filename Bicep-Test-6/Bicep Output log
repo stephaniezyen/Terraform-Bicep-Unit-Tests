@@ -1,0 +1,303 @@
+{
+  "id": "/subscriptions/996a2f3f-ee01-4ffd-9765-d2c3fc98f30a/resourceGroups/stephyen-rg2/providers/Microsoft.Resources/deployments/main",
+  "location": null,
+  "name": "main",
+  "properties": {
+    "correlationId": "c04d9fca-2f2e-49f3-95a2-e7dfc6bbc707",
+    "debugSetting": null,
+    "dependencies": [
+      {
+        "dependsOn": [
+          {
+            "id": "/subscriptions/996a2f3f-ee01-4ffd-9765-d2c3fc98f30a/resourceGroups/stephyen-rg2/providers/Microsoft.Network/networkSecurityGroups/SecGroupNet",
+            "resourceGroup": "stephyen-rg2",
+            "resourceName": "SecGroupNet",
+            "resourceType": "Microsoft.Network/networkSecurityGroups"
+          },
+          {
+            "id": "/subscriptions/996a2f3f-ee01-4ffd-9765-d2c3fc98f30a/resourceGroups/stephyen-rg2/providers/Microsoft.Network/publicIPAddresses/simpleLinuxVMPublicIP",
+            "resourceGroup": "stephyen-rg2",
+            "resourceName": "simpleLinuxVMPublicIP",
+            "resourceType": "Microsoft.Network/publicIPAddresses"
+          },
+          {
+            "id": "/subscriptions/996a2f3f-ee01-4ffd-9765-d2c3fc98f30a/resourceGroups/stephyen-rg2/providers/Microsoft.Network/virtualNetworks/vNet/subnets/Subnet",
+            "resourceGroup": "stephyen-rg2",
+            "resourceName": "vNet/Subnet",
+            "resourceType": "Microsoft.Network/virtualNetworks/subnets"
+          }
+        ],
+        "id": "/subscriptions/996a2f3f-ee01-4ffd-9765-d2c3fc98f30a/resourceGroups/stephyen-rg2/providers/Microsoft.Network/networkInterfaces/simpleLinuxVMNetInt",
+        "resourceGroup": "stephyen-rg2",
+        "resourceName": "simpleLinuxVMNetInt",
+        "resourceType": "Microsoft.Network/networkInterfaces"
+      },
+      {
+        "dependsOn": [
+          {
+            "id": "/subscriptions/996a2f3f-ee01-4ffd-9765-d2c3fc98f30a/resourceGroups/stephyen-rg2/providers/Microsoft.Network/virtualNetworks/vNet",
+            "resourceGroup": "stephyen-rg2",
+            "resourceName": "vNet",
+            "resourceType": "Microsoft.Network/virtualNetworks"
+          }
+        ],
+        "id": "/subscriptions/996a2f3f-ee01-4ffd-9765-d2c3fc98f30a/resourceGroups/stephyen-rg2/providers/Microsoft.Network/virtualNetworks/vNet/subnets/Subnet",
+        "resourceGroup": "stephyen-rg2",
+        "resourceName": "vNet/Subnet",
+        "resourceType": "Microsoft.Network/virtualNetworks/subnets"
+      },
+      {
+        "dependsOn": [
+          {
+            "id": "/subscriptions/996a2f3f-ee01-4ffd-9765-d2c3fc98f30a/resourceGroups/stephyen-rg2/providers/Microsoft.Network/networkInterfaces/simpleLinuxVMNetInt",
+            "resourceGroup": "stephyen-rg2",
+            "resourceName": "simpleLinuxVMNetInt",
+            "resourceType": "Microsoft.Network/networkInterfaces"
+          }
+        ],
+        "id": "/subscriptions/996a2f3f-ee01-4ffd-9765-d2c3fc98f30a/resourceGroups/stephyen-rg2/providers/Microsoft.Compute/virtualMachines/simpleLinuxVM",
+        "resourceGroup": "stephyen-rg2",
+        "resourceName": "simpleLinuxVM",
+        "resourceType": "Microsoft.Compute/virtualMachines"
+      },
+      {
+        "dependsOn": [
+          {
+            "id": "/subscriptions/996a2f3f-ee01-4ffd-9765-d2c3fc98f30a/resourceGroups/stephyen-rg2/providers/Microsoft.Compute/virtualMachines/simpleLinuxVM",
+            "resourceGroup": "stephyen-rg2",
+            "resourceName": "simpleLinuxVM",
+            "resourceType": "Microsoft.Compute/virtualMachines"
+          }
+        ],
+        "id": "/subscriptions/996a2f3f-ee01-4ffd-9765-d2c3fc98f30a/resourceGroups/stephyen-rg2/providers/Microsoft.Compute/virtualMachines/simpleLinuxVM/extensions/GuestAttestation",
+        "resourceGroup": "stephyen-rg2",
+        "resourceName": "simpleLinuxVM/GuestAttestation",
+        "resourceType": "Microsoft.Compute/virtualMachines/extensions"
+      }
+    ],
+    "duration": "PT54.21044S",
+    "error": null,
+    "mode": "Incremental",
+    "onErrorDeployment": null,
+    "outputResources": [
+      {
+        "id": "/subscriptions/996a2f3f-ee01-4ffd-9765-d2c3fc98f30a/resourceGroups/stephyen-rg2/providers/Microsoft.Compute/virtualMachines/simpleLinuxVM",
+        "resourceGroup": "stephyen-rg2"
+      },
+      {
+        "id": "/subscriptions/996a2f3f-ee01-4ffd-9765-d2c3fc98f30a/resourceGroups/stephyen-rg2/providers/Microsoft.Compute/virtualMachines/simpleLinuxVM/extensions/GuestAttestation",
+        "resourceGroup": "stephyen-rg2"
+      },
+      {
+        "id": "/subscriptions/996a2f3f-ee01-4ffd-9765-d2c3fc98f30a/resourceGroups/stephyen-rg2/providers/Microsoft.Network/networkInterfaces/simpleLinuxVMNetInt",
+        "resourceGroup": "stephyen-rg2"
+      },
+      {
+        "id": "/subscriptions/996a2f3f-ee01-4ffd-9765-d2c3fc98f30a/resourceGroups/stephyen-rg2/providers/Microsoft.Network/networkSecurityGroups/SecGroupNet",
+        "resourceGroup": "stephyen-rg2"
+      },
+      {
+        "id": "/subscriptions/996a2f3f-ee01-4ffd-9765-d2c3fc98f30a/resourceGroups/stephyen-rg2/providers/Microsoft.Network/publicIPAddresses/simpleLinuxVMPublicIP",
+        "resourceGroup": "stephyen-rg2"
+      },
+      {
+        "id": "/subscriptions/996a2f3f-ee01-4ffd-9765-d2c3fc98f30a/resourceGroups/stephyen-rg2/providers/Microsoft.Network/virtualNetworks/vNet",
+        "resourceGroup": "stephyen-rg2"
+      },
+      {
+        "id": "/subscriptions/996a2f3f-ee01-4ffd-9765-d2c3fc98f30a/resourceGroups/stephyen-rg2/providers/Microsoft.Network/virtualNetworks/vNet/subnets/Subnet",
+        "resourceGroup": "stephyen-rg2"
+      }
+    ],
+    "outputs": {
+      "adminUsername": {
+        "type": "String",
+        "value": "stephyen"
+      },
+      "hostname": {
+        "type": "String",
+        "value": "simplelinuxvm-if6rao2yb64fc.eastus.cloudapp.azure.com"
+      },
+      "sshCommand": {
+        "type": "String",
+        "value": "ssh stephyen@simplelinuxvm-if6rao2yb64fc.eastus.cloudapp.azure.com"
+      }
+    },
+    "parameters": {
+      "adminPasswordOrKey": {
+        "type": "SecureString"
+      },
+      "adminUsername": {
+        "type": "String",
+        "value": "stephyen"
+      },
+      "authenticationType": {
+        "type": "String",
+        "value": "password"
+      },
+      "dnsLabelPrefix": {
+        "type": "String",
+        "value": "simplelinuxvm-if6rao2yb64fc"
+      },
+      "location": {
+        "type": "String",
+        "value": "eastus"
+      },
+      "networkSecurityGroupName": {
+        "type": "String",
+        "value": "SecGroupNet"
+      },
+      "securityType": {
+        "type": "String",
+        "value": "TrustedLaunch"
+      },
+      "subnetName": {
+        "type": "String",
+        "value": "Subnet"
+      },
+      "ubuntuOSVersion": {
+        "type": "String",
+        "value": "Ubuntu-2004"
+      },
+      "virtualNetworkName": {
+        "type": "String",
+        "value": "vNet"
+      },
+      "vmName": {
+        "type": "String",
+        "value": "simpleLinuxVM"
+      },
+      "vmSize": {
+        "type": "String",
+        "value": "Standard_D2s_v3"
+      }
+    },
+    "parametersLink": null,
+    "providers": [
+      {
+        "id": null,
+        "namespace": "Microsoft.Network",
+        "providerAuthorizationConsentState": null,
+        "registrationPolicy": null,
+        "registrationState": null,
+        "resourceTypes": [
+          {
+            "aliases": null,
+            "apiProfiles": null,
+            "apiVersions": null,
+            "capabilities": null,
+            "defaultApiVersion": null,
+            "locationMappings": null,
+            "locations": [
+              "eastus"
+            ],
+            "properties": null,
+            "resourceType": "networkInterfaces",
+            "zoneMappings": null
+          },
+          {
+            "aliases": null,
+            "apiProfiles": null,
+            "apiVersions": null,
+            "capabilities": null,
+            "defaultApiVersion": null,
+            "locationMappings": null,
+            "locations": [
+              "eastus"
+            ],
+            "properties": null,
+            "resourceType": "networkSecurityGroups",
+            "zoneMappings": null
+          },
+          {
+            "aliases": null,
+            "apiProfiles": null,
+            "apiVersions": null,
+            "capabilities": null,
+            "defaultApiVersion": null,
+            "locationMappings": null,
+            "locations": [
+              "eastus"
+            ],
+            "properties": null,
+            "resourceType": "virtualNetworks",
+            "zoneMappings": null
+          },
+          {
+            "aliases": null,
+            "apiProfiles": null,
+            "apiVersions": null,
+            "capabilities": null,
+            "defaultApiVersion": null,
+            "locationMappings": null,
+            "locations": [
+              null
+            ],
+            "properties": null,
+            "resourceType": "virtualNetworks/subnets",
+            "zoneMappings": null
+          },
+          {
+            "aliases": null,
+            "apiProfiles": null,
+            "apiVersions": null,
+            "capabilities": null,
+            "defaultApiVersion": null,
+            "locationMappings": null,
+            "locations": [
+              "eastus"
+            ],
+            "properties": null,
+            "resourceType": "publicIPAddresses",
+            "zoneMappings": null
+          }
+        ]
+      },
+      {
+        "id": null,
+        "namespace": "Microsoft.Compute",
+        "providerAuthorizationConsentState": null,
+        "registrationPolicy": null,
+        "registrationState": null,
+        "resourceTypes": [
+          {
+            "aliases": null,
+            "apiProfiles": null,
+            "apiVersions": null,
+            "capabilities": null,
+            "defaultApiVersion": null,
+            "locationMappings": null,
+            "locations": [
+              "eastus"
+            ],
+            "properties": null,
+            "resourceType": "virtualMachines",
+            "zoneMappings": null
+          },
+          {
+            "aliases": null,
+            "apiProfiles": null,
+            "apiVersions": null,
+            "capabilities": null,
+            "defaultApiVersion": null,
+            "locationMappings": null,
+            "locations": [
+              "eastus"
+            ],
+            "properties": null,
+            "resourceType": "virtualMachines/extensions",
+            "zoneMappings": null
+          }
+        ]
+      }
+    ],
+    "provisioningState": "Succeeded",
+    "templateHash": "2214129637563822941",
+    "templateLink": null,
+    "timestamp": "2023-08-16T22:51:19.918036+00:00",
+    "validatedResources": null
+  },
+  "resourceGroup": "stephyen-rg2",
+  "tags": null,
+  "type": "Microsoft.Resources/deployments"
+}
